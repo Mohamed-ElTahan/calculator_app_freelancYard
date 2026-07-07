@@ -45,5 +45,5 @@ Here is a glimpse of the application in action:
 ---
 
 <div align="center">
-  <p><i>Developed with ❤️ by Eng. Mohame ElTahan</i></p>
+  <p><i>Developed with ❤️ by Eng. Mohamed ElTahan</i></p>
 </div>
