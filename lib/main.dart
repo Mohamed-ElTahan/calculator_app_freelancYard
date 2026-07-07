@@ -1,4 +1,7 @@
+import 'package:calculator_app/cubit/calculator_cubit.dart';
+import 'package:calculator_app/screens/calculator_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 void main() {
   runApp(const CalculatorApp());
@@ -9,6 +12,13 @@ class CalculatorApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(title: 'Calculator');
+    return BlocProvider(
+      create: (_) => CalculatorCubit(),
+      child: const MaterialApp(
+        title: 'Calculator',
+        debugShowCheckedModeBanner: false,
+        home: CalculatorScreen(),
+      ),
+    );
   }
 }
